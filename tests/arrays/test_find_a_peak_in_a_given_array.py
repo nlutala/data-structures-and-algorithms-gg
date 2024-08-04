@@ -1,5 +1,7 @@
 """
 A file test the find_peak_element function
+
+Author: Nathan Lutala (nlutala)
 """
 
 from arrays.find_a_peak_in_a_given_array import find_peak_element

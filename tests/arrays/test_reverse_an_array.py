@@ -1,5 +1,7 @@
 """
-A file test the find_max_element function
+A file test the reverse_array function
+
+Author: Nathan Lutala (nlutala)
 """
 from arrays.reverse_an_array import reverse_array
 
