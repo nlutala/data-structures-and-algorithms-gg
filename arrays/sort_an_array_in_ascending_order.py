@@ -18,17 +18,14 @@ def sort_array_asc(array: list) -> list:
     array_tracker = array
     new_array = []
 
-    while len(new_array) != len(array):
+    while True:
         try:
             smallest = array_tracker[0]
+            for i, value in enumerate(array_tracker):
+                if value < smallest:
+                    smallest = value
 
-            for i in range(len(array_tracker)):
-                if smallest > array_tracker[i]:
-                    smallest = array_tracker[i]
-
-            new_array.append(smallest)
             array_tracker.remove(smallest)
+            new_array.append(smallest)
         except IndexError:
-            pass
-
-    return new_array
+            return new_array
