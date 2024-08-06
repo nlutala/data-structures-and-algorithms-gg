@@ -4,7 +4,9 @@ A file tests the find_subarray_with_sum function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.move_all_negative_numbers_to_beginning_and_positive_to_end import move_negative_and_positive
+from arrays.move_all_negative_numbers_to_beginning_and_positive_to_end import (
+    move_negative_and_positive,
+)
 
 
 def test_move_negative_and_positive():
