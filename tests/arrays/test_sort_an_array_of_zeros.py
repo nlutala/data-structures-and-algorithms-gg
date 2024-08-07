@@ -4,7 +4,7 @@ A file tests the sort_array012 function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.sort_an_array_of_zeros import sort_array_012
+from arrays.level1.sort_an_array_of_zeros import sort_array_012
 
 
 def test_count_occurences_example_1():

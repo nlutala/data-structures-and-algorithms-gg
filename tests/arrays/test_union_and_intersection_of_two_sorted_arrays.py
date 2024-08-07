@@ -4,7 +4,9 @@ A file tests the union_and_intersection function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.union_and_intersection_of_two_soted_arrays import union_and_intersection
+from arrays.level1.union_and_intersection_of_two_soted_arrays import (
+    union_and_intersection,
+)
 
 
 def test_union_and_intersection_1():
@@ -24,7 +26,7 @@ def test_union_and_intersection_1():
 def test_union_and_intersection_2():
     """
     Example 2:
-    Input: arr1[] = {2, 5, 6}, arr2[] = {4, 6, 8, 10} 
+    Input: arr1[] = {2, 5, 6}, arr2[] = {4, 6, 8, 10}
     Output: Union : {2, 4, 5, 6, 8, 10}, Intersection : {6}
     """
     arr1 = [1, 3, 4, 5, 7]

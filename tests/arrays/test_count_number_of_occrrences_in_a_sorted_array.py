@@ -4,7 +4,9 @@ A file tests the count_occurrences function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.count_number_of_occurrences_in_a_sorted_array import count_occurrences
+from arrays.level1.count_number_of_occurrences_in_a_sorted_array import (
+    count_occurrences,
+)
 
 
 def test_count_occurences_example_1():

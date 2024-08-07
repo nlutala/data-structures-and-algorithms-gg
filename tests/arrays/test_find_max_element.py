@@ -3,7 +3,7 @@ A file test the find_max_element function
 
 Author: Nathan Lutala (nlutala)
 """
-from arrays.find_the_max_or_min_element_of_an_array import (
+from arrays.level1.find_the_max_or_min_element_of_an_array import (
     find_max_element, find_min_element
 )
 

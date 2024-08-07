@@ -4,7 +4,7 @@ A file tests the find_subarray_with_sum function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.find_subarray_with_given_sum_from_array import find_subarray_with_sum
+from arrays.level1.find_subarray_with_given_sum_from_array import find_subarray_with_sum
 
 
 def test_find_subarray_with_sum_example_1():
