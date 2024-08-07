@@ -30,7 +30,6 @@ def count_pairs_with_sum(arr: list, k: int) -> list[list[int]]:
 
     for i, pair in enumerate(pairs):
         total_in_pairs = pairs.count(pair)
-        print(f"total of {pair} in pairs: {total_in_pairs}")
         total_of_pair_1 = freq_num.get(str(pair[0]))
         total_of_pair_2 = freq_num.get(str(pair[1]))
         if total_in_pairs > total_of_pair_1:
