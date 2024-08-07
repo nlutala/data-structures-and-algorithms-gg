@@ -28,7 +28,7 @@ def move_negative_and_positive(array: list) -> list[int]:
         else:
             result.insert(zero_index, num)
         zero_index += 1
-    
+
     result.pop(zero_index)
 
     return result
