@@ -6,7 +6,7 @@ Author: Nathan Lutala (nlutala)
 """
 
 
-def find_duplicates(array: list) -> list[list[int]]:
+def find_duplicates(array: list) -> list[int]:
     """
     Given an array of n elements that contains elements from 0 to n-1, with
     any of these numbers appearing any number of times. Find these repeating
