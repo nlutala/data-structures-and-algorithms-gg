@@ -24,10 +24,10 @@ def test_find_first_repeating_integer_example_1():
 def test_find_first_repeating_integer_example_2():
     """
     Example 2:
-    Input: arr[] = {10, 3, 5, 5, 3, 5, 6}
-    Output: 5
-    Explanation: 5 is the first element that repeats
+    Input: arr[] = {6, 10, 5, 4, 9, 120, 4, 6, 10}
+    Output: 6 
+    Explanation: 6 is the first element that repeats
     """
-    arr = [10, 3, 5, 5, 3, 5, 6]
+    arr = [6, 10, 5, 4, 9, 120, 4, 6, 10]
 
-    assert find_first_repeating_integer(arr) == 3
+    assert find_first_repeating_integer(arr) == 6
