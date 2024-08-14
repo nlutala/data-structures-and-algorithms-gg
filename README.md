@@ -1,8 +1,6 @@
 # data-structures-and-algorithms-gg
 Going through data structures and algorithms as seen on https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/
 
-Please enure that you have activated the virtual environment by writing ``` .\venv\Scripts\activate ``` in the terminal.
-
 To run the tests, it works better if you can configure this in Visual code. I have left the .vscode folder to help with this.
 
 ## Data Sturctures
