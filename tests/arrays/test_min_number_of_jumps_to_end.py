@@ -45,3 +45,17 @@ def test_min_jumps_example_3():
     arr = [1, 2, 1, 3, 1, 9, 1, 1, 1, 1, 1]
 
     assert min_jumps(arr) == 4
+
+
+def test_min_jumps_example_4():
+    """
+    Example 4 (another example I made up):
+    Input:  arr[] = {12, 2, 1, 3, 1, 9, 1, 1, 1, 1, 1}
+    Output: 4
+    Explanation: Jump from the 1st elemet to the second element 2. From the
+    second element, jump to the 4th element 3. From the 4th element 3, jump to
+    the 6th element 9. From the 6th element, jump to the end of the array.
+    """
+    arr = [12, 2, 1, 3, 1, 9, 1, 1, 1, 1, 1]
+
+    assert min_jumps(arr) == 1
