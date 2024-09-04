@@ -23,24 +23,25 @@ def min_jumps(arr: list[int]) -> int:
     else:
         i = 0
         jumps = 0
-        index_covered = []
 
         while i < len(arr) - 1:
-            index_covered.append(i)
-
-            if index_covered[-1] >= len(arr):
-                return jumps
-
             num = arr[i]
-            sub_arr = arr[i:num+1]
-            jumps += 1
+            sub_arr = arr[i:i+num]
 
-            if sub_arr == []:
+            sub_arr_set = list(set(sub_arr))
+
+            if len(sub_arr_set) == 1:
+                i += len(sub_arr)
+            elif len(sub_arr_set) > 1:
+                indexes_of_largest_number = [
+                    i for i in range(len(sub_arr))
+                    if sub_arr[i] == max(sub_arr)
+                ]
+                i += indexes_of_largest_number[-1] + 1
+            else:
                 return jumps
 
-            if sub_arr[-1] < max(sub_arr):
-                i += sub_arr.index(max(sub_arr)) + 1
-            else:
-                i += len(sub_arr)
+            print(i, jumps, sub_arr)
+            jumps += 1
 
         return jumps
