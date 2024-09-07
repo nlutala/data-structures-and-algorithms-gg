@@ -4,7 +4,7 @@ A file tests the max_sum_of_index_and_elem function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.max_sum_in_the_configuration import (
+from dsa_problems.arrays.level2.max_sum_in_the_configuration import (
     max_sum_of_index_and_elem,
 )
 

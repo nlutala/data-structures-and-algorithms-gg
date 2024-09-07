@@ -4,7 +4,7 @@ A file tests the min_max_difference function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.minimise_max_difference_between_heights import (
+from dsa_problems.arrays.level2.minimise_max_difference_between_heights import (
     min_max_difference,
 )
 

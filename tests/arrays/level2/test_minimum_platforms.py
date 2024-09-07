@@ -4,7 +4,7 @@ A file tests the min_num_of_platforms function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.minimum_platforms import min_num_of_platforms
+from dsa_problems.arrays.level2.minimum_platforms import min_num_of_platforms
 
 
 def test_min_num_of_platforms_example_1():

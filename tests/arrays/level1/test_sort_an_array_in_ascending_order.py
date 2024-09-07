@@ -4,7 +4,7 @@ A file test the sort_array_asc function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level1.sort_an_array_in_ascending_order import sort_array_asc
+from dsa_problems.arrays.level1.sort_an_array_in_ascending_order import sort_array_asc
 
 
 def test_sort_array_asc():

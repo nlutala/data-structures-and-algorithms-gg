@@ -4,7 +4,7 @@ A file tests the find_duplicates function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.find_duplicates_in_on_time import (
+from dsa_problems.arrays.level2.find_duplicates_in_on_time import (
     find_duplicates,
 )
 

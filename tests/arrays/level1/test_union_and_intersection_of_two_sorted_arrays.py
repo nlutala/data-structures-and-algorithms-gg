@@ -4,7 +4,7 @@ A file tests the union_and_intersection function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level1.union_and_intersection_of_two_soted_arrays import (
+from dsa_problems.arrays.level1.union_and_intersection_of_two_soted_arrays import (
     union_and_intersection,
 )
 

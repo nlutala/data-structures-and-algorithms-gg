@@ -4,7 +4,7 @@ A file tests the longest_sequence function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.longest_consecutive_subsequence import longest_sequence
+from dsa_problems.arrays.level2.longest_consecutive_subsequence import longest_sequence
 
 
 def test_longest_sequence_example_1():

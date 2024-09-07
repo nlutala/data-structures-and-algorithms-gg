@@ -4,7 +4,7 @@ A file tests the find_subarray_with_0_sum function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.subarray_with_zero_sum import is_subarray_with_0_sum
+from dsa_problems.arrays.level2.subarray_with_zero_sum import is_subarray_with_0_sum
 
 
 def test_is_subarray_with_0_example_1():

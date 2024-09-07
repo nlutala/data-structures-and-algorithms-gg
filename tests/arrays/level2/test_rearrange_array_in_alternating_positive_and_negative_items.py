@@ -4,7 +4,7 @@ A file tests the rearrange_array_in_positive_and_negative function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.rearrange_array_in_alternating_positive_and_negative_items import (
+from dsa_problems.arrays.level2.rearrange_array_in_alternating_positive_and_negative_items import (
     rearrange_array_in_positive_and_negative,
 )
 

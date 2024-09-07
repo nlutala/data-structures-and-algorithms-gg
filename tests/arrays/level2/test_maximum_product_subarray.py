@@ -4,7 +4,7 @@ A file tests the max_product function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.maximum_product_array import max_product
+from dsa_problems.arrays.level2.maximum_product_array import max_product
 
 
 def test_max_product_example_1():

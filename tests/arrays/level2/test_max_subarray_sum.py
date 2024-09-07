@@ -4,7 +4,7 @@ A file tests the find_subarray_with_0_sum function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.max_subarray_sum import get_max_subarray_sum
+from dsa_problems.arrays.level2.max_subarray_sum import get_max_subarray_sum
 
 
 def test_get_max_subarray_sum_example_1():

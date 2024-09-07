@@ -4,7 +4,7 @@ A file tests the find_factorial function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.find_the_factorial_of_a_larger_number import find_factorial
+from dsa_problems.arrays.level2.find_the_factorial_of_a_larger_number import find_factorial
 
 
 def test_find_factorial_example_1():

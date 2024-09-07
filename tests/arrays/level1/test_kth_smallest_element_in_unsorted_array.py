@@ -4,7 +4,7 @@ A file tests the find_kth_smallest_element function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level1.kth_smallest_element_in_unsorted_array import (
+from dsa_problems.arrays.level1.kth_smallest_element_in_unsorted_array import (
     find_kth_smallest_element,
 )
 

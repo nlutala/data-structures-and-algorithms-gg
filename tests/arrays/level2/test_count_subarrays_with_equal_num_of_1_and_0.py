@@ -4,7 +4,7 @@ A file tests the count_equal_num_of_1_and_0 function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.count_subarrays_with_equal_num_of_1_and_0 import (
+from dsa_problems.arrays.level2.count_subarrays_with_equal_num_of_1_and_0 import (
     count_equal_num_of_1_and_0,
 )
 

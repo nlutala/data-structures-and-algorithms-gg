@@ -4,7 +4,7 @@ A file tests the min_elem function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.minimum_element_in_a_sorted_and_rotated_array import min_elem
+from dsa_problems.arrays.level2.minimum_element_in_a_sorted_and_rotated_array import min_elem
 
 
 def test_min_elem_example_1():

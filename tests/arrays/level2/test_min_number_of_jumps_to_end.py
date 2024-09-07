@@ -4,7 +4,7 @@ A file tests the min_jumps function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.min_number_of_jumps_to_end import min_jumps
+from dsa_problems.arrays.level2.min_number_of_jumps_to_end import min_jumps
 
 
 def test_min_jumps_example_1():

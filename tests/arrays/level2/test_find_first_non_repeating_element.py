@@ -4,7 +4,7 @@ A file tests the find_first_repeating_integer function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.find_first_non_repeating_element import (
+from dsa_problems.arrays.level2.find_first_non_repeating_element import (
     find_non_repeating_integer,
 )
 

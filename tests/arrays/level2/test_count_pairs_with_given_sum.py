@@ -4,7 +4,7 @@ A file tests the count_pairs_with_sum function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.count_pairs_with_given_sum import (
+from dsa_problems.arrays.level2.count_pairs_with_given_sum import (
     count_pairs_with_sum,
 )
 

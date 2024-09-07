@@ -3,7 +3,7 @@ A file test the reverse_array function
 
 Author: Nathan Lutala (nlutala)
 """
-from arrays.level1.reverse_an_array import reverse_array
+from dsa_problems.arrays.level1.reverse_an_array import reverse_array
 
 
 def test_reverse_array_example_1():

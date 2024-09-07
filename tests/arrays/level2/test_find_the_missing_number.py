@@ -4,7 +4,7 @@ A file tests the find_missing_number function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.find_the_missing_number import (
+from dsa_problems.arrays.level2.find_the_missing_number import (
     find_missing_number,
 )
 

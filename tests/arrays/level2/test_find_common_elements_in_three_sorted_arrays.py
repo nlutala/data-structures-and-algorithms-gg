@@ -4,7 +4,7 @@ A file tests the find_common_elements function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.find_common_elements_in_three_sorted_arrays import (
+from dsa_problems.arrays.level2.find_common_elements_in_three_sorted_arrays import (
     find_common_elements,
 )
 

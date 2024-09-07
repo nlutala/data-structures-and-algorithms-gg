@@ -4,7 +4,7 @@ A file tests the quick_sort function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.quick_sort_algorithm import quick_sort
+from dsa_problems.arrays.level2.quick_sort_algorithm import quick_sort
 
 
 def test_quick_sort_example_1():

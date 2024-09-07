@@ -4,7 +4,7 @@ A file tests the cyclically_rotate_array function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level2.program_to_cyclically_rotate_an_array import (
+from dsa_problems.arrays.level2.program_to_cyclically_rotate_an_array import (
     cyclically_rotate_array,
 )
 

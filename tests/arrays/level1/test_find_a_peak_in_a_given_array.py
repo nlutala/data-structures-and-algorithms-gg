@@ -4,7 +4,7 @@ A file test the find_peak_element function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level1.find_a_peak_in_a_given_array import find_peak_element
+from dsa_problems.arrays.level1.find_a_peak_in_a_given_array import find_peak_element
 
 
 def test_find_peak_element_example_1() -> None:

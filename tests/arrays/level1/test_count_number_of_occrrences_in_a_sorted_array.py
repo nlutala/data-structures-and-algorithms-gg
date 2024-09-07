@@ -4,7 +4,7 @@ A file tests the count_occurrences function
 Author: Nathan Lutala (nlutala)
 """
 
-from arrays.level1.count_number_of_occurrences_in_a_sorted_array import (
+from dsa_problems.arrays.level1.count_number_of_occurrences_in_a_sorted_array import (
     count_occurrences,
 )
 
