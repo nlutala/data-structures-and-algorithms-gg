@@ -9,6 +9,8 @@ To run the tests, it works better if you can configure this in Visual code. I ha
 The top 50 array coding problems: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
 
 ### String
+The top 50 string coding problems: https://www.geeksforgeeks.org/top-50-string-coding-problems-for-interviews/
+
 ### Linked Lists
 ### Matrix/Grid
 ### Stack
