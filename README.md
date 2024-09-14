@@ -16,6 +16,9 @@ The top 50 string coding problems: https://www.geeksforgeeks.org/top-50-string-c
 ### Stack
 ### Queue
 ### Heap
-### Hash
+
+### Hash (Hashmap or DIctionary)
+The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-on-hash-data-structure-asked-in-sde-interviews/
+
 ### Tree
 ### Graph
