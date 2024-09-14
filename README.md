@@ -22,3 +22,8 @@ The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-o
 
 ### Tree
 ### Graph
+
+## Algorithms
+
+### Recurion
+The top 50 problems on recursion algorithms: https://www.geeksforgeeks.org/top-50-interview-problems-on-recursion-algorithm/
