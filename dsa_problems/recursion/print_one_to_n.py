@@ -13,9 +13,13 @@ def print_1_to_n(n: int) -> None:
 
     :param - n (the number to print to)\n
     """
+    # if n > 0:
+    #     print(n)
+    #     return print_1_to_n(n - 1)
+
     if n > 0:
-        print(n)
-        return print_1_to_n(n - 1)
+        print_1_to_n(n - 1)
+        print(n, end="  ")
 
 
 if __name__ == "__main__":
