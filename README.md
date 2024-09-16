@@ -13,7 +13,10 @@ The top 50 string coding problems: https://www.geeksforgeeks.org/top-50-string-c
 
 ### Linked Lists
 ### Matrix/Grid
+
 ### Stack
+The top 50 stack coding problems: https://www.geeksforgeeks.org/top-50-problems-on-stack-data-structure-asked-in-interviews/
+
 ### Queue
 ### Heap
 
