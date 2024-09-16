@@ -14,28 +14,36 @@ def postfix_to_prefix(postfix_exp: str) -> str:
 
     Return the prefix expression string.
     """
-    # Using the guide below (I didn't understand it):
-    # Read the Postfix expression from left to right
-    # If the symbol is an operand, then push it onto the Stack
-    # If the symbol is an operator, then pop two operands from the Stack
-    # Create a string by concatenating the two operands and the operator before them.
-    # string = operator + operand2 + operand1
-    # And push the resultant string back to Stack
-    # Repeat the above steps until end of Postfix expression.
-    stack = []
+    # Step 1. Postfix to infix
     operators = {"+", "-", "/", "*"}
-    prefix_exp = ""
+    number_stack = []
+    operator_stack = []
+    infix = []
 
     for p in postfix_exp:
         if p not in operators:
-            stack.append(p)
+            number_stack.append(p)
         else:
-            if len(stack) == 1:
-                prefix_exp = prefix_exp + stack.pop()
-            elif len(stack) >= 2:
-                prefix_exp = prefix_exp + stack.pop() + stack.pop()
+            operator_stack.append(p)
 
-    return prefix_exp
+            if len(number_stack) != 0:
+                infix.append(
+                    "".join([number_stack[-2], operator_stack[-1], number_stack[-1]])
+                )
+
+                number_stack.pop()
+                number_stack.pop()
+                number_stack.append(infix[-1])
+                infix = infix[1:]
+
+    infix_exp = number_stack[0]
+
+    # TODO: Implement Step 2. Infix to prefix
+    number_stack.clear()
+    operator_stack.clear()
+    prefix = []
+
+    return infix_exp
 
 
 if __name__ == "__main__":
@@ -49,8 +57,8 @@ if __name__ == "__main__":
         Infix to Prefix :  *+AB-CD
         """
         exp = "AB+CD-*"
+        print(postfix_to_prefix(exp))
         return postfix_to_prefix(exp) == "*+AB-CD"
-
 
     def test_postfix_to_prefix_example_2():
         """
@@ -61,6 +69,7 @@ if __name__ == "__main__":
         Infix to Prefix :  *-A/BC-/AKL
         """
         exp = "ABC/-AK/L-*"
+        print(postfix_to_prefix(exp))
         return postfix_to_prefix(exp) == "*-A/BC-/AKL"
 
     print(
