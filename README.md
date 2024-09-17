@@ -30,3 +30,6 @@ The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-o
 
 ### Recurion
 The top 50 problems on recursion algorithms: https://www.geeksforgeeks.org/top-50-interview-problems-on-recursion-algorithm/
+
+### Sliding Window
+The top 10 problems on sliding window algorithms: https://www.geeksforgeeks.org/window-sliding-technique/#practice-problems-on-sliding-window-technique
