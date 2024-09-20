@@ -35,3 +35,6 @@ The top 50 problems on recursion algorithms: https://www.geeksforgeeks.org/top-5
 
 ### Sliding Window
 The top 10 problems on sliding window algorithms: https://www.geeksforgeeks.org/window-sliding-technique/#practice-problems-on-sliding-window-technique
+
+Find my solutions here: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/dsa_problems/sliding_window
+And the test cases here: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/tests/sliding_window (The tests are always labelled test_FILENAME_WITH_SOLUTION_TO_PROBLEM.py)
