@@ -40,3 +40,38 @@ def test_find_max_of_subarray_example_3() -> None:
     arr = [2, 3]
     k = 3
     assert find_max_of_subarray(arr, k) == "Invalid"
+
+
+def test_find_max_of_subarray_example_4() -> None:
+    """
+    Example 4
+    Input  : arr[] = {-4, -2, 1, -3}, k = 2
+    Output : -1
+    Explanation: The sub array is [-2, -1].
+    """
+    arr = [-4, -2, 1, -3]
+    k = 2
+    assert find_max_of_subarray(arr, k) == -1
+
+
+def test_find_max_of_subarray_example_5() -> None:
+    """
+    Example 5
+    Input  : Input : arr[] = {1, 1, 1, 1, 1, 1}, k = 2
+    Output : 2
+    Explanation: The sub array is [1, 1].
+    """
+    arr = [1, 1, 1, 1, 1, 1]
+    k = 2
+    assert find_max_of_subarray(arr, k) == 2
+
+
+def test_find_max_of_subarray_example_6() -> None:
+    """
+    Example 6
+    Input  : Input : arr[] = {1, 2, 3, -10, -3}, k = 4
+    Output : -4
+    """
+    arr = [1, 2, 3, -10, -3]
+    k = 4
+    assert find_max_of_subarray(arr, k) == -4
