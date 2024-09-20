@@ -42,6 +42,7 @@ def test_find_max_of_subarray_example_3() -> None:
     assert find_max_of_subarray(arr, k) == "Invalid"
 
 
+# More test cases were found here: https://www.geeksforgeeks.org/largest-sum-subarray-least-k-numbers/
 def test_find_max_of_subarray_example_4() -> None:
     """
     Example 4
