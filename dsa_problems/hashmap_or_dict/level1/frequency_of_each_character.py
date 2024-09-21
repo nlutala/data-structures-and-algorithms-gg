@@ -15,72 +15,10 @@ def char_frequency(string: str) -> list[list]:
 
     returns a list of lists (character, frequency).
     """
-    frequencies = {}
+    freq = {}
 
     for s in string:
-        if frequencies.get(s, 0) == 0:
-            frequencies[s] = 1
-        else:
-            frequencies[s] = frequencies.get(s) + 1
+        if freq.get(s) is None:
+            freq[s] = string.count(s)
 
-    return [[f, frequencies.get(f)] for f in frequencies]
-
-
-if __name__ == "__main__":
-
-    def test_char_frequency_example_1():
-        """
-        Example 1:
-        Input: str = "geeksforgeeks"
-        Output:
-        r 1
-        e 4
-        s 2
-        g 2
-        k 2
-        f 1
-        o 1
-        """
-        string = "geeksforgeeks"
-
-        return char_frequency(string) == [
-            ["g", 2],
-            ["e", 4],
-            ["k", 2],
-            ["s", 2],
-            ["f", 1],
-            ["o", 1],
-            ["r", 1],
-        ]
-
-    def test_char_frequency_example_2():
-        """
-        Example 2:
-        Input: str = "programming"
-        Output:
-        n 1
-        i 1
-        p 1
-        o 1
-        r 2
-        a 1
-        g 2
-        m 2
-        """
-        string = "programming"
-
-        return char_frequency(string) == [
-            ["p", 1],
-            ["r", 2],
-            ["o", 1],
-            ["g", 2],
-            ["a", 1],
-            ["m", 2],
-            ["i", 1],
-            ["n", 1]
-        ]
-
-    print(
-        test_char_frequency_example_1(),
-        test_char_frequency_example_2(),
-    )
+    return [[s, freq.get(s)] for s in freq]

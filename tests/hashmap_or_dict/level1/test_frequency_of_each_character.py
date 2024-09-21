@@ -59,4 +59,5 @@ def test_char_frequency_example_2():
         ["a", 1],
         ["m", 2],
         ["i", 1],
+        ["n", 1]
     ]
