@@ -14,7 +14,7 @@ def test_mean_example_1():
     Output : 3
     """
     arr = [1, 2, 3, 4, 5]
-    assert mean(arr) == 3
+    assert mean(arr, len(arr)) == 3
 
 
 def test_mean_example_2():
@@ -24,4 +24,4 @@ def test_mean_example_2():
     Output : 2
     """
     arr = [1, 2, 3]
-    assert mean(arr) == 2
+    assert mean(arr, len(arr)) == 2
