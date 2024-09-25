@@ -4,7 +4,7 @@ A file test the mean function
 Author: Nathan Lutala (nlutala)
 """
 
-from dsa_problems.recursion.mean_of_array_using_recursion import mean
+from dsa_problems.recursion.level1.mean_of_array_using_recursion import mean
 
 
 def test_mean_example_1():

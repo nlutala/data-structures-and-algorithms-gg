@@ -4,7 +4,7 @@ A file test the recur_sum function
 Author: Nathan Lutala (nlutala)
 """
 
-from dsa_problems.recursion.sum_of_natural_numbers_using_recursion import recur_sum
+from dsa_problems.recursion.level1.sum_of_natural_numbers_using_recursion import recur_sum
 
 
 def test_recur_sum_example_1():
