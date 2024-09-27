@@ -16,27 +16,23 @@ def min_jumps(arr: list[int]) -> int:
 
     minimum number of jumps needed to reach the end of the array.
     """
-    arr_set = list(set(arr))
+    num_of_jumps = 0
+    current_index = 0
 
-    if len(arr_set) == 1:
-        return len(arr) - 1 // arr_set[0]
-    else:
-        index = 0
-        jumps = 0
-        current_num = arr[index]
+    while current_index < len(arr):
+        elem = arr[current_index]
+        window = arr[current_index : current_index + elem]
 
-        while index < len(arr) - 1:
-            sub_arr = arr[index:index+current_num+1]
+        if elem > len(window):
+            current_index += elem
+        else:
+            max_index = [i for i, w in enumerate(window) if w == max(window)]
+            current_index += max_index[-1] + 1
 
-            if sub_arr == []:
-                return jumps
+        num_of_jumps += 1
+        # print(current_index)
 
-            num_dict = {}
+    if len(list(set(arr))) == 1:
+        num_of_jumps -= 1
 
-            for i, num in enumerate(sub_arr):
-                num_dict[str(num)] = i + 1
-
-            index += num_dict.get(str(max(sub_arr)))
-            jumps += 1
-      
-        return jumps
+    return num_of_jumps
