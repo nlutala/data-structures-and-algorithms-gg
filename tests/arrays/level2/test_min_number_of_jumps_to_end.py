@@ -38,9 +38,7 @@ def test_min_jumps_example_3():
     Example 3 (an example I made up):
     Input:  arr[] = {1, 2, 1, 3, 1, 9, 1, 1, 1, 1, 1}
     Output: 4
-    Explanation: Jump from the 1st element to the second element 2. From the
-    second element, jump to the 4th element 3. From the 4th element 3, jump to
-    the 6th element 9. From the 6th element, jump to the end of the array.
+    Explanation: (1 -> 2, 2 -> 3, 3 -> 9, 9 -> end)
     """
     arr = [1, 2, 1, 3, 1, 9, 1, 1, 1, 1, 1]
 

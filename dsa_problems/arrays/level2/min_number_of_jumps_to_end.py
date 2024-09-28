@@ -19,20 +19,23 @@ def min_jumps(arr: list[int]) -> int:
     num_of_jumps = 0
     current_index = 0
 
-    while current_index < len(arr):
+    while current_index < len(arr) - 1:
         elem = arr[current_index]
-        window = arr[current_index : current_index + elem]
 
-        if elem > len(window):
-            current_index += elem
+        if elem > 1:
+            elem += 1
+
+        window = arr[current_index : current_index + elem]
+        max_index = [i for i, w in enumerate(window) if w == max(window)]
+
+        if len(list(set(window))) == 1:
+            current_index += window[0]
         else:
-            max_index = [i for i, w in enumerate(window) if w == max(window)]
-            current_index += max_index[-1] + 1
+            if max_index[-1] == 0:
+                current_index += current_index + elem
+            else:
+                current_index += max_index[-1]
 
         num_of_jumps += 1
-        # print(current_index)
-
-    if len(list(set(arr))) == 1:
-        num_of_jumps -= 1
 
     return num_of_jumps
