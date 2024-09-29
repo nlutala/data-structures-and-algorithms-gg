@@ -37,6 +37,6 @@ def fibonacci_numbers(n: int) -> list[int]:
     elif n == 2:
         return [0, 1]
     else:
-        # printing fibonacci numbers
-        next_num = fibonacci_numbers(n-1)[-1] + fibonacci_numbers(n-1)[-2]
-        return fibonacci_numbers(n-2) + [next_num]
+        return fibonacci_numbers(n-1) + [
+            fibonacci_numbers(n-1)[-2] + fibonacci_numbers(n-1)[-1]
+        ]
