@@ -20,21 +20,20 @@ def frequent_elements(arr: list[int], k: int) -> list[int]:
     Returns K numbers with the most occurrences
     """
     arr_set = list(set(arr))
-
-    # Get the frequencies of each number as a dictionary {occurences: [number]}
     freq_dict = {}
 
     for a in arr_set:
-        if freq_dict.get(str(arr.count(a))) is None:
-            freq_dict[str(arr.count(a))] = [a]
+        count_key = str(arr.count(a))
+        if freq_dict.get(count_key) is None:
+            freq_dict[count_key] = [a]
         else:
-            freq_dict[str(arr.count(a))] = sorted(freq_dict.get(
-                str(arr.count(a))
-            ) + [a], reverse=True)
+            freq_dict[count_key] = freq_dict.get(count_key) + [a]
 
-    occurrences = []
+    freq_keys = sorted(list(freq_dict.keys()), reverse=True)
 
-    for key in freq_dict:
-        occurrences = freq_dict.get(key) + occurrences
+    freq_elems = []
 
-    return occurrences[:k]
+    for key in freq_keys:
+        freq_elems += sorted(freq_dict.get(key), reverse=True)
+
+    return freq_elems[:k]

@@ -26,9 +26,9 @@ def test_frequent_elements_example_2():
     Input: arr[] = {7, 10, 11, 5, 2, 5, 5, 7, 11, 8, 9}, K = 4
     Output: 5 11 7 10
     Explanation:
-    Frequency of 5 = 3, 
-    Frequency of 11 = 2, 
-    Frequency of 7 = 2, 
+    Frequency of 5 = 3,
+    Frequency of 11 = 2,
+    Frequency of 7 = 2,
     Frequency of 10 = 1
     These four have the maximum frequency and 5 is largest among rest.
     """
