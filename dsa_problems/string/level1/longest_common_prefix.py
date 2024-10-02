@@ -45,31 +45,3 @@ def longest_prefix(strs: list[str]) -> str | int:
             return longest_prefix if len(longest_prefix) > 0 else -1
 
     return longest_prefix
-
-
-if __name__ == "__main__":
-
-    def test_longest_prefix_example_1():
-        """
-        Example 1:
-        Input: strs[] = [“geeksforgeeks”, “geeks”, “geek”, “geezer”]
-        Output: gee
-        Explanation: “gee” is the longest common prefix in all the given
-        strings.
-        """
-        strs = ["geeksforgeeks", "geeks", "geek", "geezer"]
-        # print(longest_prefix(strs))
-        return longest_prefix(strs) == "gee"
-
-    def test_longest_prefix_example_2():
-        """
-        Example 2:
-        Input: strs[] = ["hello", "world"]
-        Output: -1
-        Explanation: There's no common prefix in the given strings.
-        """
-        strs = ["hello", "world"]
-        # print(longest_prefix(strs))
-        return longest_prefix(strs) == -1
-
-    print(test_longest_prefix_example_1(), test_longest_prefix_example_2())
