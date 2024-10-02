@@ -15,5 +15,16 @@ def remove_duplicates(s: str) -> str:
 
     returns a new string with adjacent duplicate characters removed.
     """
-    # Not done - TODO
+
+    first_repeating_char = ""
+
+    for i in range(len(s)-1):
+        if s[i] == s[i+1]:
+            first_repeating_char = s[i]
+            break
+
+    if first_repeating_char != "":
+        s = [letter for letter in s if letter != first_repeating_char]
+        return remove_duplicates("".join(s))
+
     return s
