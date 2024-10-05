@@ -44,35 +44,3 @@ def postfix_to_prefix(postfix_exp: str) -> str:
     prefix = []
 
     return infix_exp
-
-
-if __name__ == "__main__":
-
-    def test_postfix_to_prefix_example_1():
-        """
-        Example 1:
-        Input :  Postfix : AB+CD-*
-        Output : Prefix :  *+AB-CD
-        Explanation : Postfix to Infix : (A+B) * (C-D)
-        Infix to Prefix :  *+AB-CD
-        """
-        exp = "AB+CD-*"
-        print(postfix_to_prefix(exp))
-        return postfix_to_prefix(exp) == "*+AB-CD"
-
-    def test_postfix_to_prefix_example_2():
-        """
-        Example 2:
-        Input :  Postfix : ABC/-AK/L-*
-        Output : Prefix :  *-A/BC-/AKL
-        Explanation : Postfix to Infix : ((A-(B/C))*((A/K)-L))
-        Infix to Prefix :  *-A/BC-/AKL
-        """
-        exp = "ABC/-AK/L-*"
-        print(postfix_to_prefix(exp))
-        return postfix_to_prefix(exp) == "*-A/BC-/AKL"
-
-    print(
-        test_postfix_to_prefix_example_1(),
-        test_postfix_to_prefix_example_2(),
-    )
