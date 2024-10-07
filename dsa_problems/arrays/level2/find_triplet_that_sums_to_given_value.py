@@ -16,17 +16,21 @@ def three_sum(arr: list[int], sum: int) -> list[int] | None:
 
     returns a list with the triple that add up to the sum.
     """
+    temp_arr = arr
     remaining = sum
 
-    for a in arr:
-        numbers_less_than = [num for num in arr if num <= remaining - a and num != a]
-        numbers_less_than = numbers_less_than[0 : len(numbers_less_than) - 1]
+    # a + b + c = sum
+    for i, elem in enumerate(arr):
+        temp_arr = arr[0:i] + arr[i + 1 :]
+        # sum - a = b + c
+        if remaining >= elem:
+            # remaining = sum - a
+            remaining -= elem
+            temp_arr = [a for a in temp_arr if a <= remaining]
 
-        if len(numbers_less_than) != 0:
-            remaining -= a
-
-            numbers_less_than = [num for num in arr if num <= remaining and num != a]
-
-            for num in numbers_less_than:
-                if remaining - num in numbers_less_than:
-                    return sorted([a, num, remaining - num])
+            for j, b in enumerate(temp_arr):
+                temp_arr_2 = temp_arr[0:j] + temp_arr[j + 1 :]
+                # If remaining - b is in the array (return a, b and remaining - b)
+                # remaining - b = c
+                if remaining - b in temp_arr_2:
+                    return sorted([elem, b, remaining - b])
