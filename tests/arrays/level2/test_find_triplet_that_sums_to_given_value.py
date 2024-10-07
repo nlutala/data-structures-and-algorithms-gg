@@ -4,9 +4,7 @@ A file tests the three_sum function
 Author: Nathan Lutala (nlutala)
 """
 
-from dsa_problems.arrays.level2.find_triplet_that_sums_to_given_value import (
-    three_sum,
-)
+from dsa_problems.arrays.level2.find_triplet_that_sums_to_given_value import three_sum
 
 
 def test_three_sum_example_1():
@@ -57,3 +55,14 @@ def test_three_sum_example_4():
     arr = [1, 1, 3, 4, 8]
     sum = 5
     assert three_sum(arr, sum) == [1, 1, 3]
+
+
+def test_four_sum_example_5():
+    """
+    Example 3:
+    Input: arr = {20, 1, 3, 0, 0}, sum = 20
+    Output: [0, 0, 20]
+    """
+    arr = [20, 1, 3, 0, 0]
+    sum = 20
+    assert three_sum(arr, sum) == [0, 0, 20]
