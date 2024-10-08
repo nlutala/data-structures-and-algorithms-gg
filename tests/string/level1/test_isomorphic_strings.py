@@ -29,3 +29,26 @@ def test_is_isomorphic_example_2():
     str1 = "aab"
     str2 = "xyz"
     assert is_isomorphic(str1, str2) == False
+
+
+# Custom tests
+def test_is_isomorphic_example_3():
+    """
+    Example 2:
+    Input:  str1 = “aaba”, str2 = “xxbc”
+    Output: False
+    """
+    str1 = "aaba"
+    str2 = "xxbc"
+    assert is_isomorphic(str1, str2) == False
+
+
+def test_is_isomorphic_example_4():
+    """
+    Example 2:
+    Input:  str1 = “aabacc”, str2 = “ccabaa”
+    Output: False
+    """
+    str1 = "aabacc"
+    str2 = "ccabaa"
+    assert is_isomorphic(str1, str2) == False
