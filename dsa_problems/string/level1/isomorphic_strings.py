@@ -23,21 +23,25 @@ def is_isomorphic(str1: str, str2: str) -> bool:
 
     if len(str1_set) == len(str2_set):
         str1_dict = {}
+        str1_count = 0
 
         for char in str1_set:
-            if char not in str1_dict.keys():
-                str1_dict[char] = str1.count(char)
+            if str1_dict.get(char) is None:
+                str1_dict[char] = str1_count
+                str1_count += 1
 
         str2_dict = {}
+        str2_count = 0
 
         for char in str2_set:
-            if char not in str2_dict.keys():
-                str2_dict[char] = str2.count(char)
+            if str2_dict.get(char) is None:
+                str2_dict[char] = str2_count
+                str2_count += 1
 
-        str1_count_list = sorted(list(str1_dict.values()))
-        str2_count_list = sorted(list(str2_dict.values()))
+        str1_list = [str1_dict.get(char) for char in str1]
+        str2_list = [str2_dict.get(char) for char in str2]
 
-        if str1_count_list == str2_count_list:
+        if str1_list == str2_list:
             return True
 
     return False
