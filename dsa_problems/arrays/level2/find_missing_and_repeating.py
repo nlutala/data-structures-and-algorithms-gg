@@ -42,20 +42,13 @@ def get_missing_and_repating(arr: list[int]) -> list[int]:
         missing = missing_numbers[0]
 
     # Find the repeating number
-    set_arr = list(set(arr))
-    number_occurrences = {}
-    occurrences = 0
+    temp_arr = []
 
-    for num in set_arr:
-        for elem in arr:
-            if elem == num:
-                occurrences += 1
+    for elem in arr:
+        if elem not in temp_arr:
+            temp_arr.append(elem)
+        else:
+            repeating = elem
+            break
 
-        number_occurrences[str(num)] = occurrences
-        occurrences = 0
-
-    for number in number_occurrences:
-        if number_occurrences.get(number) > 1:
-            repeating = int(number)
-        
     return [missing, repeating]
