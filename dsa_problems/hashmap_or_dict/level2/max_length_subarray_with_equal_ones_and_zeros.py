@@ -22,33 +22,32 @@ def range_of_equal_1s_and_0s(arr: list[int]) -> str:
 
         if len(zero_count) == len(one_count):
             return f"0 to {len(arr)-1}"
+        elif len(zero_count) < len(one_count):
+            window_length = len(zero_count) * 2
         else:
-            if len(zero_count) < len(one_count):
-                window_length = len(zero_count) * 2
-            else:
-                window_length = len(one_count) * 2
+            window_length = len(one_count) * 2
 
-            length = 0
-            starting = 0
-            ending = 0
+        length = 0
+        starting = 0
+        ending = 0
 
-            for i in range(len(arr) - window_length + 1):
-                start = i
-                end = i + window_length
-                subarray = arr[start:end]
+        for i in range(len(arr) - window_length + 1):
+            start = i
+            end = i + window_length
+            subarray = arr[start:end]
 
-                while len(subarray) > length:
-                    zero_count = [num for num in subarray if num == 0]
-                    one_count = [num for num in subarray if num == 1]
+            while len(subarray) > length:
+                zero_count = [num for num in subarray if num == 0]
+                one_count = [num for num in subarray if num == 1]
 
-                    if len(zero_count) == len(one_count):
-                        length = len(subarray)
-                        starting = start
-                        ending = end - 1
-                    else:
-                        end -= 1
-                        subarray = arr[start:end]
+                if len(zero_count) == len(one_count):
+                    length = len(subarray)
+                    starting = start
+                    ending = end - 1
+                else:
+                    end -= 1
+                    subarray = arr[start:end]
 
-            return f"{starting} to {ending}"
+        return f"{starting} to {ending}"
 
     return "No such subarray"
