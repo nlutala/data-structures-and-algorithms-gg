@@ -4,7 +4,7 @@ A file tests the height_of_tree function
 Author: Nathan Lutala (nlutala)
 """
 
-from dsa_problems.heaps.height_of_heap_or_binary_tree import height_of_tree
+from dsa_problems.heaps.level1.height_of_heap_or_binary_tree import height_of_tree
 
 
 def test_height_of_tree_example_1():
