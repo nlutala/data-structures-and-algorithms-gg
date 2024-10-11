@@ -18,30 +18,35 @@ def is_isomorphic(str1: str, str2: str) -> bool:
     returns True if all the occurrences of every character in str1 is the same as str2.
     False if otherwise
     """
-    str1_set = list(set(str1))
-    str2_set = list(set(str2))
+    id = 0
 
-    if len(str1_set) == len(str2_set):
-        str1_dict = {}
-        str1_count = 0
+    # For str1 first
+    str1_dict = {}
 
-        for char in str1_set:
-            if str1_dict.get(char) is None:
-                str1_dict[char] = str1_count
-                str1_count += 1
+    for char in str1:
+        if str1_dict.get(char) is None:
+            str1_dict[char] = id
+            id += 1
 
-        str2_dict = {}
-        str2_count = 0
+    id = 0
 
-        for char in str2_set:
-            if str2_dict.get(char) is None:
-                str2_dict[char] = str2_count
-                str2_count += 1
+    # For str2
+    str2_dict = {}
 
-        str1_list = [str1_dict.get(char) for char in str1]
-        str2_list = [str2_dict.get(char) for char in str2]
+    for char in str2:
+        if str2_dict.get(char) is None:
+            str2_dict[char] = id
+            id += 1
 
-        if str1_list == str2_list:
-            return True
+    # If one string has more different letters than another, return False
+    if len(str1_dict) != len(str2_dict):
+        return False
 
-    return False
+    str1_representation = [str1_dict.get(char) for char in str1]
+    str2_representation = [str2_dict.get(char) for char in str2]
+
+    for i in range(len(str1)):
+        if str1_representation[i] != str2_representation[i]:
+            return False
+
+    return True
