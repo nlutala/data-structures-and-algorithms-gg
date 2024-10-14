@@ -29,8 +29,30 @@ def test_height_of_tree_example_1():
     # the nodes_to_insert list
     assert len(minheap) == len(nodes_to_insert)
 
+
+def test_height_of_tree_example_2():
+    """
+    Example 2 (Example 1 continued):
+    Input : [5, 3, 17, 10, 84, 19, 6, 22, 9]
+    Output :
+    PARENT : 3 LEFT CHILD : 5 RIGHT CHILD :6
+    PARENT : 5 LEFT CHILD : 9 RIGHT CHILD :84
+    PARENT : 6 LEFT CHILD : 19 RIGHT CHILD :17
+    PARENT : 9 LEFT CHILD : 22 RIGHT CHILD :10
+    The Min val is 3
+    """
+    minheap = MinHeap()
+    nodes_to_insert = [5, 3, 17, 10, 84, 19, 6, 22, 9]
+
+    # Insert nodes into the MinHeap
+    for node in nodes_to_insert:
+        minheap.insert(node)
+
     # Assert that the smallest element in the MinHeap is 3
     assert minheap.extractMin() == 3
 
     # After removing extracting the minimum, there should be 1 less element
     assert len(minheap) == len(nodes_to_insert) - 1
+
+    # The min should now be 5
+    assert minheap.getMin() == 5
