@@ -38,17 +38,20 @@ class MinHeap:
 
         returns the minimum element in the MinHeap.
         """
-        current_node = self
+        min_element = self.val
 
-        while current_node.left is not None:
-            current_node = current_node.left
+        if self.left.val <= self.right.val:
+            temp_node = self.left
+            self.val = self.left.val
+            self.left = temp_node.left
+        else:
+            temp_node = self.right
+            self.val = self.right.val
+            self.right = temp_node.right
 
-        self.nodes.remove(current_node.val)
+        self.nodes.remove(min_element)
 
-        if current_node.right is not None:
-            current_node = current_node.right
-
-        return current_node.val
+        return min_element
 
     def insert(self, node: int) -> None:
         """
@@ -61,10 +64,14 @@ class MinHeap:
         if self.val is None:
             self.val = node
         elif self.val >= node:
+            temp_node = self.val
+
             if self.left is None:
-                self.left = MinHeap(node)
+                self.val = node
+                self.left = MinHeap(temp_node)
             else:
-                self.left.insert(node)
+                self.val = node
+                self.left.insert(temp_node)
         elif self.val < node:
             if self.right is None:
                 self.right = MinHeap(node)
