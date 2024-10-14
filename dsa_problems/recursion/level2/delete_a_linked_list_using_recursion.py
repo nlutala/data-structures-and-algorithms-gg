@@ -4,18 +4,24 @@ https://www.geeksforgeeks.org/delete-linked-list-using-recursion/
 
 Author: Nathan Lutala (nlutala)
 """
-# TODO: I don't get this one... I'll need to come back to it.
 
 
 class LinkedList:
-    def __init__(self, new_data):
+    """
+    An object defining a linked list.\n
+
+    It is initialised by supplying new_data (an integer).
+    """
+
+    def __init__(self, new_data: int):
         self.data = new_data
         self.next = None
 
 
 def delete_linked_list(linked_list: object) -> None:
     """
-    Given a linked list, the task is to delete the linked list using recursion.\n
+    Given a linked list, the task is to delete the linked list using 
+    recursion.\n
 
     :param - linked_list (a LinkedList object)\n
 
@@ -25,4 +31,6 @@ def delete_linked_list(linked_list: object) -> None:
         return linked_list
 
     linked_list.data = None
-    return delete_linked_list(linked_list.next)
+    next_linked_list = linked_list.next
+    linked_list.next = None
+    return delete_linked_list(next_linked_list)

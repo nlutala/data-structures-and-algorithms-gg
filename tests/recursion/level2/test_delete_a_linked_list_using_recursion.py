@@ -26,6 +26,10 @@ def test_delete_linked_list_example_1():
     head.next.next.next.next = LinkedList(5)
     assert delete_linked_list(head) is None
 
+    # Check that the linked_list is really deleted
+    assert head.data is None
+    assert head.next is None
+
 
 def test_delete_linked_list_example_2():
     """
@@ -42,3 +46,7 @@ def test_delete_linked_list_example_2():
     head.next.next.next = LinkedList(4)
     head.next.next.next.next = LinkedList(1)
     assert delete_linked_list(head) is None
+
+    # Check that the linked_list is really deleted
+    assert head.data is None
+    assert head.next is None
