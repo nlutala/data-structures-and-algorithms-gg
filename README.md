@@ -8,30 +8,36 @@ To run the tests, it works better if you can configure this in Visual code. I ha
 ### Array
 The top 50 array coding problems: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
 
-### String
-The top 50 string coding problems: https://www.geeksforgeeks.org/top-50-string-coding-problems-for-interviews/
 
+### Graph
 ### Linked Lists
 ### Matrix/Grid
 
-### Stack
-The top 50 stack coding problems: https://www.geeksforgeeks.org/top-50-problems-on-stack-data-structure-asked-in-interviews/
-
 ### Queue
-
-### Heap
-The top 50 heap coding problems: https://www.geeksforgeeks.org/top-50-problems-on-heap-data-structure-asked-in-interviews/
 
 ### Hash (Hashmap or Dictionary)
 The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-on-hash-data-structure-asked-in-sde-interviews/
 
+
+### Heap
+The top 50 heap coding problems: https://www.geeksforgeeks.org/top-50-problems-on-heap-data-structure-asked-in-interviews/
+
+
+### Stack
+The top 50 stack coding problems: https://www.geeksforgeeks.org/top-50-problems-on-stack-data-structure-asked-in-interviews/
+
+
+### String
+The top 50 string coding problems: https://www.geeksforgeeks.org/top-50-string-coding-problems-for-interviews/
+
+
 ### Tree
-### Graph
 
 ## Algorithms
 
 ### Recurion
 The top 50 problems on recursion algorithms: https://www.geeksforgeeks.org/top-50-interview-problems-on-recursion-algorithm/
+
 
 ### Sliding Window
 The top 10 problems on sliding window algorithms: https://www.geeksforgeeks.org/window-sliding-technique/#practice-problems-on-sliding-window-technique
