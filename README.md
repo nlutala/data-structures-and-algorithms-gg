@@ -10,8 +10,6 @@ The top 50 array coding problems: https://www.geeksforgeeks.org/top-50-array-cod
 
 
 ### Graph
-### Linked Lists
-### Matrix/Grid
 
 
 ### Hash (Hashmap or Dictionary)
@@ -22,6 +20,8 @@ The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-o
 The top 50 heap coding problems: https://www.geeksforgeeks.org/top-50-problems-on-heap-data-structure-asked-in-interviews/
 
 
+### Linked Lists
+### Matrix/Grid
 ### Queue
 
 
