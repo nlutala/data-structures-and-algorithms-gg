@@ -13,7 +13,6 @@ The top 50 array coding problems: https://www.geeksforgeeks.org/top-50-array-cod
 ### Linked Lists
 ### Matrix/Grid
 
-### Queue
 
 ### Hash (Hashmap or Dictionary)
 The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-on-hash-data-structure-asked-in-sde-interviews/
@@ -21,6 +20,9 @@ The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-o
 
 ### Heap
 The top 50 heap coding problems: https://www.geeksforgeeks.org/top-50-problems-on-heap-data-structure-asked-in-interviews/
+
+
+### Queue
 
 
 ### Stack
