@@ -1,6 +1,6 @@
 """
 A file to tackle the coding interview question as found on the website below:
-https://www.geeksforgeeks.org/top-50-problems-on-hash-data-structure-asked-in-sde-interviews/
+https://www.geeksforgeeks.org/majority-element/
 
 Author: Nathan Lutala (nlutala)
 """
