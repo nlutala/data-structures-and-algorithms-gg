@@ -19,8 +19,6 @@ def k_closest_elements(k: int, x: int, arr: list[int]) -> list[int]:
     distance = None
     k_elements = []
 
-    print(new_arr)
-
     for i in range(len(new_arr) - k):
         subarray = new_arr[i : i + k]
 
