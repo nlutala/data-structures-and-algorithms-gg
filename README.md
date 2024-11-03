@@ -32,6 +32,8 @@ The top 50 stack coding problems: https://www.geeksforgeeks.org/top-50-problems-
 ### String
 The top 50 string coding problems: https://www.geeksforgeeks.org/top-50-string-coding-problems-for-interviews/
 
+* My solutions to the Level 1 string questions: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/dsa_problems/string/level1 (tests for these can be found here: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/tests/string/level1)
+
 
 ### Tree
 
