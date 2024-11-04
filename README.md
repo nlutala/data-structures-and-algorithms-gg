@@ -8,6 +8,8 @@ To run the tests, it works better if you can configure this in Visual code. I ha
 ### Array
 The top 50 array coding problems: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
 
+* My solutions to the Level 2 array questions: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/dsa_problems/arrays/level2 (tests for these can be found here: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/tests/arrays/level2)
+
 
 ### Graph
 
