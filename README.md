@@ -17,6 +17,8 @@ The top 50 array coding problems: https://www.geeksforgeeks.org/top-50-array-cod
 ### Hash (Hashmap or Dictionary)
 The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-on-hash-data-structure-asked-in-sde-interviews/
 
+* My solutions to the Level 1 hash questions: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/dsa_problems/hashmap_or_dict/level1 (tests for these can be found here: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/tests/hashmap_or_dict/level1)
+
 
 ### Heap
 The top 50 heap coding problems: https://www.geeksforgeeks.org/top-50-problems-on-heap-data-structure-asked-in-interviews/
