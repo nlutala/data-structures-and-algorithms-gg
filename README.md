@@ -23,6 +23,8 @@ The top 50 hash coding problems: https://www.geeksforgeeks.org/top-50-problems-o
 ### Heap
 The top 50 heap coding problems: https://www.geeksforgeeks.org/top-50-problems-on-heap-data-structure-asked-in-interviews/
 
+My solutions to the Level 1 hash questions: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/dsa_problems/heaps/level1 (https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/tests/heaps/level1)
+
 
 ### Linked Lists
 ### Matrix/Grid
