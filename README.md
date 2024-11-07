@@ -34,7 +34,7 @@ The top 50 heap coding problems: https://www.geeksforgeeks.org/top-50-problems-o
 ### Stack
 The top 50 stack coding problems: https://www.geeksforgeeks.org/top-50-problems-on-stack-data-structure-asked-in-interviews/
 
-* My solutions to the Level 1 (Easy) stack questions: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/dsa_problems/stack/level1 (tests for these can be found here: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/stack/heaps/level1)
+* My solutions to the Level 1 (Easy) stack questions: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/dsa_problems/stack/level1 (tests for these can be found here: https://github.com/nlutala/data-structures-and-algorithms-gg/tree/main/tests/stack/level1)
 
 
 ### String
