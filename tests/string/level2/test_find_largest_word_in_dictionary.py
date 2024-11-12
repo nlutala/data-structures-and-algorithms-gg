@@ -4,9 +4,7 @@ A file tests the get_largest_word function
 Author: Nathan Lutala (nlutala)
 """
 
-from dsa_problems.string.level2.find_largest_word_in_dictionary import (
-    get_largest_word,
-)
+from dsa_problems.string.level2.find_largest_word_in_dictionary import get_largest_word
 
 
 def test_get_largest_word_example_1():
@@ -34,7 +32,7 @@ def test_get_largest_word_example_2():
 # Custom tests - Still not convinced this works well...
 def test_get_largest_word_example_3():
     """
-    Example 2:
+    Example 3:
     Input  : dict = {"atoi", "pintu", "literally", "geeks", "forgeek"},
     str = "literallygeeks"
     Output : literally
@@ -46,7 +44,7 @@ def test_get_largest_word_example_3():
 
 def test_get_largest_word_example_4():
     """
-    Example 2:
+    Example 4:
     Input  : dict = {"atoi", "pintu", "literal", "geeks", "forgeek"},
     str = "atoialiterallygeeks"
     Output : literal
@@ -54,3 +52,15 @@ def test_get_largest_word_example_4():
     dictionary = ["atoi", "pintu", "literal", "geeks", "forgeek"]
     string = "atoialiterallygeeks"
     assert get_largest_word(dictionary, string) == "literal"
+
+
+def test_get_largest_word_example_5():
+    """
+    Example 5:
+    Input  : dict = {"atoi", "pintu", "literal", "geeks", "forgeek"},
+    str = "atoialiterallygeeks"
+    Output : literal
+    """
+    dictionary = ["atoi", "pintu", "literal", "geeks", "forgeek"]
+    string = "latelralretoil"
+    assert get_largest_word(dictionary, string) == "atoi"
