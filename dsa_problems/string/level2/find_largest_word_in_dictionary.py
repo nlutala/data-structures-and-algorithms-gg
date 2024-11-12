@@ -23,6 +23,7 @@ def get_largest_word(dictionary: list[str], string: str) -> str:
     # Loop through the words in the order (defined by d) to pick out the
     # longest word
     for word in d:
-        largest_string = [letter for letter in word if letter in string]
-        if "".join(largest_string) in d:
-            return "".join(largest_string)
+        word_in_string = "".join([letter for letter in string if letter in word])
+
+        if word in word_in_string:
+            return word
